@@ -60,6 +60,7 @@ export class PopOverPage {
     this.usersProvider.UnFollowUser(this.user._id).subscribe(data => {
       this.socket.emit('refresh', {});
     }, err => console.log(err));
+
   }
 
 }
