@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="CloseModal()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Create Post</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-textarea class="message" [(ngModel)]="post" placeholder="Create post...">
+
+          </ion-textarea>
+        </ion-item>
+      </ion-col>
+      <ion-col col-12>
+        <ion-row>
+          <ion-col col-2>
+            <button class="imageIcn" ion-button block clear item-start (click)="SelectImage()">
+              <ion-icon name="image"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col col-10>
+            <button class="addPost" ion-button block (click)="CreatePost()">
+              Add Post
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,43 @@
+page-notification {
+  ion-content {
+    margin-top: 10px;
+    .alert-card {
+      padding: 0px !important;
+      margin: 0px !important;
+      height: 80px !important;
+      width: 100%;
+      margin-bottom: 5px !important;
+      box-shadow: none !important;
+    }
+
+    .notificationMarkAndDeleteContainer{
+      padding: 0px !important;
+    }
+
+    ion-item {
+      height: 80px !important;
+      margin: 0px !important;
+      padding: 0px !important;
+      top: -8px !important;
+      bottom: 0px !important;
+    }
+
+    .ionAvatar {
+      margin-top: -32px !important;
+      margin-left: 10px !important;
+      margin-right: 15px !important;
+    }
+
+    .msg {
+      color: #4aa1f3;
+    }
+
+    .postTime {
+      height: 25px !important;
+    }
+
+    .read {
+      color: #c0c0c0;
+    }
+  }
+}

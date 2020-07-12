@@ -1,0 +1,33 @@
+<div class="group" *ngIf="following">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 col-md-4 col-lg-3 col-xs-2 class="created_group" *ngFor="let user of followingArray">
+        <div class="container">
+          <div class="imgs" *ngIf="user.userFollowed.picVersion">
+            <img class="imgBg" src="https://res.cloudinary.com/mihirb/image/upload/v{{user.userFollowed.picVersion}}/{{user.userFollowed.picId}}">
+          </div>
+          <p ion-text color="dark">{{user.userFollowed.username}}</p>
+          <p ion-text color="blue-color" *ngIf="user.userFollowed.city">{{user.userFollowed.city}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+
+
+<div class="group" *ngIf="followers">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 col-md-4 col-lg-3 col-xs-2 class="created_group" *ngFor="let user of followersArray">
+          <div class="container">
+            <div class="imgs" *ngIf="user.follower.picVersion">
+              <img class="imgBg" src="https://res.cloudinary.com/mihirb/image/upload/v{{user.follower.picVersion}}/{{user.follower.picId}}">
+            </div>
+            <p ion-text color="dark">{{user.follower.username}}</p>
+            <p ion-text color="blue-color" *ngIf="user.follower.city">{{user.follower.city}}</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
